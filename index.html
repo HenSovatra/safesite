@@ -8,8 +8,7 @@
 <meta property="og:title" content="⚠️ Security Alert" />
 <meta property="og:description"
     content="Suspicious activity has been identified that may indicate a virus or malware risk. For your safety, please verify your device before continuing." />
-<meta property="og:image"
-    content="https://store.hp.com/app/assets/images/uploads/prod/top-ten-worst-computer-viruses-in-history1604426271555174.jpg" />
+<meta property="og:image" content="anonymous-hacker-5k-5120x2880-15748.jpg" />
 <meta property="og:url" content="https://hensovatra.github.io/safesite" />
 
 <!-- Telegram prefers large images -->
@@ -17,5 +16,120 @@
 <meta property="og:image:height" content="630" />
 
 <!-- Optional but recommended -->
-
 <meta property="og:site_name" content="⚠️ Security Alert" />
+
+<style>
+    .hack-flicker {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+
+        animation:
+            flicker 0.15s infinite,
+            glitch 0.08s infinite;
+
+        filter: contrast(140%) brightness(110%);
+    }
+
+    /* Screen flicker */
+    @keyframes flicker {
+        0% {
+            opacity: 1;
+        }
+
+        10% {
+            opacity: 0.3;
+        }
+
+        20% {
+            opacity: 1;
+        }
+
+        30% {
+            opacity: 0.1;
+        }
+
+        40% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.6;
+        }
+
+        60% {
+            opacity: 1;
+        }
+
+        70% {
+            opacity: 0.2;
+        }
+
+        80% {
+            opacity: 1;
+        }
+
+        90% {
+            opacity: 0.4;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    /* Horizontal glitch shake */
+    @keyframes glitch {
+        0% {
+            transform: translate(0);
+        }
+
+        20% {
+            transform: translate(-5px, 2px);
+        }
+
+        40% {
+            transform: translate(5px, -2px);
+        }
+
+        60% {
+            transform: translate(-8px, 1px);
+        }
+
+        80% {
+            transform: translate(8px, -1px);
+        }
+
+        100% {
+            transform: translate(0);
+        }
+    }
+
+    .hack-flicker {
+        position: relative;
+        animation:
+            flicker 0.12s infinite,
+            glitch 0.06s infinite;
+
+        filter:
+            contrast(160%) brightness(115%) hue-rotate(5deg);
+    }
+
+    body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: repeating-linear-gradient(to bottom,
+                rgba(255, 255, 255, 0.02) 0px,
+                rgba(255, 255, 255, 0.02) 1px,
+                transparent 2px,
+                transparent 4px);
+        pointer-events: none;
+        mix-blend-mode: overlay;
+    }
+</style>
+
+<body style="margin: 0; padding: 0;">
+    <img class="hack-flicker" style="width: 100vw; height: 100vh; object-fit: cover;"
+        src="anonymous-hacker-5k-5120x2880-15748.jpg" alt="">
+</body>
